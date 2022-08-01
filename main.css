@@ -353,9 +353,12 @@ figure.foodies .profile {
 
 .wrapper {
   width: 50%;
-  padding: 1vw;
+  padding: 1e;
+  display: grid;
+  grid-template-columns: 1fr;
   /* padding-top: 10vh; */
 }
+
 
 .wrapper input {
   display: none;
@@ -364,11 +367,12 @@ figure.foodies .profile {
 label {
   display: flex;
   border: 2px solid #d17641;
-  user-select: none;
   width: 100%;
-  height: 70px;
+  height: auto;
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 1em;
+  justify-content: space-between;
+  align-items: center;
 }
 
 label div:first-child {
@@ -379,8 +383,8 @@ label div:first-child {
 }
 
 .cross {
-  margin-right: 15px;
-  margin-top: 3px;
+  margin: 3px 15px auto auto;
+
 }
 
 .cross:before,
@@ -402,7 +406,7 @@ label div:first-child {
   box-sizing: border-box;
   font-family: sans-serif;
   max-height: 0;
-  overflow: hidden;
+  overflow: auto;
   font-size: 2em;
   margin: 10px 10px;
   transition: max-height, .5s;
